@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Calendar {
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Введите число, пожалуйста ");
+        var  numberOfMonth = in.nextInt();
+
+        String[] months = {"январь", "февраль", "март", "апрель", "май", "июнь",
+                "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"};
+
+        if (numberOfMonth > 0 || numberOfMonth <= 12){
+            System.out.println("Это месяц " + months[numberOfMonth]);
+        }
+            else {System.out.println("Такого месяца не существует");
+            }
+    }
+
+}
