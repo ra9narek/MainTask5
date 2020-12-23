@@ -10,8 +10,8 @@ public class Calendar {
         String[] months = {"январь", "февраль", "март", "апрель", "май", "июнь",
                 "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"};
 
-        if (numberOfMonth > 0 || numberOfMonth <= 12){
-            System.out.println("Это месяц " + months[numberOfMonth]);
+        if (numberOfMonth > 0 & numberOfMonth <= 12){
+            System.out.println("Это месяц " + months[numberOfMonth-1]);
         }
             else {System.out.println("Такого месяца не существует");
             }
